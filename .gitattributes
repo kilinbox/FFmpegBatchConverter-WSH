@@ -1,0 +1,2 @@
+*.vbs diff=sjis
+ *.xml diff=sjis
