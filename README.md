@@ -18,6 +18,7 @@ version 4.2.1で動作確認済
  
 * setting.xml
 　
+　変換元動画が入ったフォルダ、変換先のフォルダ情報が書かれたファイル。
 　
 * STEP1_H264のMP4変換バッチ作成(fpsを24に指定アニメ用).vbs
 
@@ -47,7 +48,7 @@ version 4.2.1で動作確認済
  
 * setting.xmlをテキストエディタで開いて次の2カ所を編集する。
 
-> <Movie_Path>C:\Movies_Folder\</Movie_Path>
+> <Movie_Path>C:\Movies_Folder\</Movie_Path>  
 > <Export_Path>C:\Export_Folder\</Export_Path>
 
 ## 使い方
