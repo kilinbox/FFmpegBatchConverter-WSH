@@ -14,11 +14,9 @@ Dim OBJ_Lock_File
 Dim WshShell
 Dim objExec
 
-'定義
-STR_Program_Path = "C:\Programs\"
-
 Set OBJ_FSO = WScript.CreateObject("Scripting.FileSystemObject")
 Set WshShell = WScript.CreateObject("WScript.Shell")
+STR_Program_Path = WScript.CreateObject("WScript.Shell").CurrentDirectory + "\"
 
 'ロックファイルがなければ動画フォルダ一覧を取得してバッチファイルを作成
 If OBJ_FSO.FileExists( STR_Program_Path+"lock" ) = FALSE Then

@@ -6,18 +6,20 @@ Dim STR_Export_Path
 Dim STR_Program_Path
 Dim STR_Presets_File
 
+Dim OBJ_XML
 Dim OBJ_FSO
 Dim OBJ_Folder
 Dim OBJ_File
 Dim COL_SubFolder
 Dim COL_File
 
+Set OBJ_XML = WScript.CreateObject("MSXML2.DOMDocument")
+OBJ_XML.load("setting.xml")
+
 'フォルダの場所を定義
-'スペースが入ったフォルダはやめてください
-'フォルダパスの最後には必ず\マークを入れてください
-STR_Program_Path = "C:\Programs\"		'このプログラムがあるフォルダ
-STR_Movie_Path = "C:\Movies_Folder\"	'元動画があるフォルダ
-STR_Export_Path = "C:\Export_Folder\"	'出力先フォルダ
+STR_Program_Path = WScript.CreateObject("WScript.Shell").CurrentDirectory + "\"
+STR_Movie_Path = OBJ_XML.getElementsByTagName("Movie_Path").Item(0).firstChild.nodeValue
+STR_Export_Path = OBJ_XML.getElementsByTagName("Export_Path").Item(0).firstChild.nodeValue
 
 Set OBJ_FSO = WScript.CreateObject("Scripting.FileSystemObject")
 
