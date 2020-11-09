@@ -19,7 +19,7 @@ STR_Program_Path = "C:\Programs\"		'このプログラムがあるフォルダ
 STR_Movie_Path = "C:\Movies_Folder\"	'元動画があるフォルダ
 STR_Export_Path = "C:\Export_Folder\"	'出力先フォルダ
 
-STR_Presets_File = "libx264-hq.ffpreset"
+STR_Presets_File = "libx264.ffpreset"
 Set OBJ_FSO = WScript.CreateObject("Scripting.FileSystemObject")
 
 'ロックファイルがなければ動画フォルダ一覧を取得してバッチファイルを作成
