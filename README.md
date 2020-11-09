@@ -4,7 +4,7 @@
 FFmpegを使ってフォルダ内にある動画ファイルを一括変換するもの。
 WSH（Windows Script Host）で書いている。
 
-## 用意するもの
+## 別途用意するもの
 
 * FFmpeg
 
