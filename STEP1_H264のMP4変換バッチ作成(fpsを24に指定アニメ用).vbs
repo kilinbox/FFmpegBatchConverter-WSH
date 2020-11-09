@@ -1,6 +1,6 @@
 Option Explicit
 
-'å®£è¨€éƒ¨
+'éŒ¾•”
 Dim STR_Movie_Path
 Dim STR_Export_Path
 Dim STR_Program_Path
@@ -12,17 +12,17 @@ Dim OBJ_File
 Dim COL_SubFolder
 Dim COL_File
 
-'ãƒ•ã‚©ãƒ«ãƒ€ã®å ´æ‰€ã‚’å®šç¾©
-'ã‚¹ãƒšãƒ¼ã‚¹ãŒå…¥ã£ãŸãƒ•ã‚©ãƒ«ãƒ€ã¯ã‚„ã‚ã¦ãã ã•ã„
-'ãƒ•ã‚©ãƒ«ãƒ€ãƒ‘ã‚¹ã®æœ€å¾Œã«ã¯å¿…ãš\ãƒžãƒ¼ã‚¯ã‚’å…¥ã‚Œã¦ãã ã•ã„
-STR_Program_Path = "C:\Programs\"		'ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ãŒã‚ã‚‹ãƒ•ã‚©ãƒ«ãƒ€
-STR_Movie_Path = "C:\Movies_Folder\"	'å…ƒå‹•ç”»ãŒã‚ã‚‹ãƒ•ã‚©ãƒ«ãƒ€
-STR_Export_Path = "C:\Export_Folder\"	'å‡ºåŠ›å…ˆãƒ•ã‚©ãƒ«ãƒ€
+'ƒtƒHƒ‹ƒ_‚ÌêŠ‚ð’è‹`
+'ƒXƒy[ƒX‚ª“ü‚Á‚½ƒtƒHƒ‹ƒ_‚Í‚â‚ß‚Ä‚­‚¾‚³‚¢
+'ƒtƒHƒ‹ƒ_ƒpƒX‚ÌÅŒã‚É‚Í•K‚¸\ƒ}[ƒN‚ð“ü‚ê‚Ä‚­‚¾‚³‚¢
+STR_Program_Path = "C:\Programs\"		'‚±‚ÌƒvƒƒOƒ‰ƒ€‚ª‚ ‚éƒtƒHƒ‹ƒ_
+STR_Movie_Path = "C:\Movies_Folder\"	'Œ³“®‰æ‚ª‚ ‚éƒtƒHƒ‹ƒ_
+STR_Export_Path = "C:\Export_Folder\"	'o—ÍæƒtƒHƒ‹ƒ_
 
 STR_Presets_File = "libx264.ffpreset"
 Set OBJ_FSO = WScript.CreateObject("Scripting.FileSystemObject")
 
-'ãƒ­ãƒƒã‚¯ãƒ•ã‚¡ã‚¤ãƒ«ãŒãªã‘ã‚Œã°å‹•ç”»ãƒ•ã‚©ãƒ«ãƒ€ä¸€è¦§ã‚’å–å¾—ã—ã¦ãƒãƒƒãƒãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œæˆ
+'ƒƒbƒNƒtƒ@ƒCƒ‹‚ª‚È‚¯‚ê‚Î“®‰æƒtƒHƒ‹ƒ_ˆê——‚ðŽæ“¾‚µ‚Äƒoƒbƒ`ƒtƒ@ƒCƒ‹‚ðì¬
 If OBJ_FSO.FileExists( STR_Program_Path+"lock" ) = FALSE Then
 
   Set OBJ_Folder = OBJ_FSO.GetFolder(STR_Movie_Path)
